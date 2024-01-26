@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.iteam {
+    cursor: pointer;
+}
+
+section {
+    background-image: url(../images/bg3.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.control {
+    width: 100%;
+    height: 250px;
+}
+
+.images {
+    position: relative;
+
+}
+
+.layer {
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.images {
+    transition: 0.5s;
+    border: 2px solid aqua;
+    border-radius: 10px;
+}
+
+.images:hover {
+    transform: scale(1.1);
+}
+
+.iteam {
+    box-shadow: 15px -5px 20px rgba(255, 255, 255, 0.2);
+
+}
+
+.clickImage {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgClick {
+    background-image: url(../images/2.jpg);
+    width: 50%;
+    height: 50%;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+i {
+    padding: 15px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.x {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+i:hover {
+    color: aqua !important;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+    .vh-100 {
+        height: 223vh !important;
+
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .vh-100 {
+        height: 340vh !important;
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .vh-100 {
+        height: 150vh !important;
+
+    }
+}
